@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="height">200</property>
+    <property name="iconphoto">BTaKGEBec.gif</property>
+    <property name="width">200</property>
+    <child>
+      <object class="pygubu.builder.widgets.toplevelmenu" id="toplevelmenu1">
+        <child>
+          <object class="tk.Menu" id="menu1">
+            <child>
+              <object class="tk.Menuitem.Command" id="command1">
+                <property name="command" type="command" cbtype="simple">pagesegitiga</property>
+                <property name="label" translatable="yes">Segi Tiga</property>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Menuitem.Command" id="command2">
+                <property name="command" type="command" cbtype="simple">pagesegiempat</property>
+                <property name="label" translatable="yes">Segi Empat</property>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Menuitem.Command" id="command3">
+                <property name="command" type="command" cbtype="simple">selesai</property>
+                <property name="label" translatable="yes">Selesai</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="framemenuutama" named="True">
+        <property name="height">200</property>
+        <property name="padding">10</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label1">
+            <property name="text" translatable="yes">Hitung Luas Segi Tiga dan Segi Empat</property>
+            <layout manager="pack">
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label2">
+            <property name="compound">top</property>
+            <property name="image">BTaKGEBec.gif</property>
+            <property name="text" translatable="yes">Versi 2023</property>
+            <layout manager="pack">
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Labelframe" id="labelframe2">
+            <property name="height">200</property>
+            <property name="labelanchor">n</property>
+            <property name="padding">10</property>
+            <property name="text" translatable="yes">Luas Segi Tiga</property>
+            <property name="width">200</property>
+            <layout manager="place">
+              <property name="anchor">center</property>
+              <property name="bordermode">inside</property>
+              <property name="relheight">0.84</property>
+              <property name="relwidth">0.86</property>
+              <property name="relx">0.46</property>
+              <property name="rely">0.49</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="label3">
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">Panjang Alas</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entryalas" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="label4">
+                <property name="text" translatable="yes">Tinggi segi tiga
+</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entrytinggi" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="button1">
+                <property name="text" translatable="yes">Hitung Luas Segi Tiga</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="labelluassegitiga" named="True">
+                <property name="text" translatable="yes">Luas segi tiga =</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Labelframe" id="labelframe4">
+            <property name="height">200</property>
+            <property name="labelanchor">n</property>
+            <property name="padding">10</property>
+            <property name="text" translatable="yes">Luas Segi Empat</property>
+            <property name="width">200</property>
+            <layout manager="place">
+              <property name="anchor">center</property>
+              <property name="bordermode">inside</property>
+              <property name="relheight">0.84</property>
+              <property name="relwidth">0.86</property>
+              <property name="relx">0.46</property>
+              <property name="rely">0.49</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="label6">
+                <property name="justify">left</property>
+                <property name="text" translatable="yes">Panjang segi empat :</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entrypanjang" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="label7">
+                <property name="text" translatable="yes">Lebar segi empat :
+</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entrylebar" named="True">
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="button2">
+                <property name="text" translatable="yes">Hitung Luas Segi Empat</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="labelluassegiempat" named="True">
+                <property name="text" translatable="yes">Luas segi empat =</property>
+                <layout manager="pack">
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
